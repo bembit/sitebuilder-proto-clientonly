@@ -1,0 +1,91 @@
+/* src/components/Navigation.css */
+
+.interface-container {
+  display: flex;
+  min-height: 35px; /* Needed for static / dynamic templates */
+  justify-content: center;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.user-header {
+  margin-top: var(--spacing-s);
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.template-management {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35px;
+  background-color: var(--bg-color-dark);
+  color: white;
+  padding: var(--spacing-s);
+  border-radius: 10px;
+  z-index: 10000;
+  border: 1px solid #fff;
+  min-height: 450px;
+}
+
+.indexeddb-view {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  z-index: 10;
+  ul {
+    list-style: none;
+  }
+}
+
+.template-management-section {
+  background-color: rgb(39, 39, 39);
+  padding: var(--padding-s);
+  display: flex;
+  border-radius: 7px;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+}
+
+.template-management-section h3 {
+  /* padding: var(--padding-s); */
+}
+
+.template-management-section button {
+  margin: 0;
+  /* padding: var(--padding-s); */
+}
+
+.template-management-section:not(:last-of-type) {
+  margin-bottom: var(--spacing-s);
+}
+
+.template-management-section > * {
+  /* display: flex; */
+  /* flex-direction: column; */
+  border: var(--border-light);
+  border-radius: 7px;
+  background-color: var(--bg-color-dark);
+  height: 100%;
+  flex: 1;
+  padding: var(--padding-s);
+}
+
+.general-info {
+  
+}
+
+.template-save {
+  
+}
+
+.bin-management {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+}

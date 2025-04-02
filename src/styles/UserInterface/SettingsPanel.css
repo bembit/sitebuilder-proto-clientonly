@@ -1,0 +1,27 @@
+.settings-panel {
+    position: fixed;
+    top: var(--spacing-s);
+    right: var(--spacing-s);
+    background-color: var(--bg-color-dark);
+    color: white;
+    padding: var(--padding-s);
+    border-radius: 10px;
+    width: var(--wEm);
+    z-index: 10;
+    border: 1px solid #fff;
+  }
+  
+  .settings-panel h3 {
+    margin-top: 0;
+  }
+  
+  .settings-panel input {
+    width: 100%;
+  }
+  
+  .settings-panel span {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+  }
+  

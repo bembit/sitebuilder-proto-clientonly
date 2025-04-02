@@ -1,0 +1,27 @@
+.customize-elements {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-s);
+}
+
+.customize-elements label {
+    display: block;
+}
+
+.add-elements-container {
+    min-height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+    width: var(--wEm);
+    position: fixed;
+    top: var(--spacing-s);
+    left: var(--spacing-s);
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: var(--padding-s);
+    border-radius: 8px;
+    z-index: 100;
+    border: 1px solid #fff;
+}

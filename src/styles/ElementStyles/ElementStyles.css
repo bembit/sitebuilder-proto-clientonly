@@ -1,0 +1,11 @@
+/* generic element styles */
+/* text, images, buttons, paragraphs, etc. */
+
+.hero p {
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
