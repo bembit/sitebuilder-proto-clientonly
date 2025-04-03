@@ -1,17 +1,12 @@
 # Sitebuilder Prototype Snapshot
 
-Felt emo, might continue.
-
 ## Low dependency client side only
 
-A `proof on concept prototype` for a site builder.
-Started as a design tool concept to test colors, fonts, ideas and concepts. But I couldn't just stop.
-
-Not sure if I'll continue, don't feel like it mid AI hype season.
+A `proof of concept prototype` for a client side only site builder.
 
 `Builds into 395kb, 121kb gzipped.`
 
-I included a basic useable UI for it. UX is "not the strongest" atm..
+I included a basic useable UI for it. UX is "not the strongest" if you are not me.. Let's call it MyX.
 
 ## Dependencies
     "dexie": "^4.0.11",
@@ -20,24 +15,26 @@ I included a basic useable UI for it. UX is "not the strongest" atm..
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^19.0.0"
--colorful can be removed just tested with it
+    -colorful can be removed just tested it
 
 ## Features
 - Fully client side
 - IndexedDB for storing templates and app state using Dexie
+- Can save and load templates
 - React DnD for drag and drop
 - React Context for theme and state management
-- Has templates
-- Bin
-- Setting
-- UI
+- Has templates 2 basic templates
+- A Bin to restore
+- Bunch of basic setting
+- A half decent close UI
 - Undo redo
-
-## CRUD
+- Can add extra sections
 - Can add text, image, heading, button elements
-- Can add sections
-- Can add custom templates
-- Can save and load templates
+- Handles images as base64 strings -->
 
-## Handles images as base64 strings
-- Can add images to elements
+## Note
+- Felt emo, might continue. Somewhere in the middle of refactoring elements and sections.
+- Will continue if Gemini won't be able to single shot it in six months.
+- Was good do dork around with React after years. Gets too much hate for no reason. Single devX is great.
+
+<img src="./landing.png" width="100%">

@@ -32,10 +32,12 @@ const PageContent = ({ currentSection }) => {
 
   const sectionColors = settings.sectionColors || {};
 
+  // Extract dynamic sections from pageStructure
   const dynamicSections = pageStructure
     .filter(el => el.type === 'section' && !defaultSections.some(ds => ds.id === el.id))
     .map(el => ({ id: el.id, name: el.name }));
 
+  // Combine static and dynamic sections
   const allSections = sectionOrder.map(sectionId => {
     const staticSection = defaultSections.find(s => s.id === sectionId);
     const dynamicSection = dynamicSections.find(s => s.id === sectionId);

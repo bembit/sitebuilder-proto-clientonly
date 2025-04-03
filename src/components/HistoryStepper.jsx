@@ -2,7 +2,7 @@
 import React, { useContext, useMemo, useState, useEffect } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 
-// Custom hook to debounce history updates
+// Debounce history updates
 const useDebouncedValue = (value, delay) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 

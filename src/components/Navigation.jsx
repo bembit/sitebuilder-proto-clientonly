@@ -155,16 +155,19 @@ const Navigation = ({ currentSection, setCurrentSection }) => {
   const [showTemplatesStatic, setShowTemplatesStatic] = useState(false);
   const [showSidebar, setShowSidebar] = useState(true);
 
+  // Extract dynamic sections from pageStructure
   const dynamicSections = pageStructure
     .filter(el => el.type === 'section' && !defaultSections.some(ds => ds.id === el.id))
     .map(el => ({ id: el.id, name: el.name }));
 
+  // Combine static and dynamic sections
   const allSections = sectionOrder.map(sectionId => {
     const staticSection = defaultSections.find(s => s.id === sectionId);
     const dynamicSection = dynamicSections.find(s => s.id === sectionId);
     return staticSection || dynamicSection;
   }).filter(Boolean);
 
+  // Navigation buttons for switching sections
   const sectionIds = allSections.map(s => s.id);
   const currentIndex = sectionIds.indexOf(currentSection);
 
@@ -218,8 +221,10 @@ const Navigation = ({ currentSection, setCurrentSection }) => {
   const toggleHighlight = () => setHighlightSections(prev => !prev);
   const toggleTemplates = () => setShowTemplates(prev => !prev);
   const toggleTemplatesStatic = () => setShowTemplatesStatic(prev => !prev);
+
   const toggleSidebar = () => setShowSidebar(prev => !prev);
 
+  // Template management
   const handleSaveTemplate = async () => {
     if (!templateName.trim()) {
       alert('Please enter a template name.');

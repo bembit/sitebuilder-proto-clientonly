@@ -35,7 +35,7 @@ const getIndexedDBStats = async () => {
     // Estimate total size in MB
     const serializeToBytes = (obj) => {
       const str = JSON.stringify(obj);
-      return new TextEncoder().encode(str).length; // UTF-8 byte length
+      return new TextEncoder().encode(str).length;
     };
 
     let totalSizeBytes = 0;

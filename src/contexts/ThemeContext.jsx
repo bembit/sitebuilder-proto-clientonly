@@ -116,7 +116,7 @@ export const ThemeProvider = ({ children, siteSettings: initialSiteSettings, max
     }
   };
 
-  // History recording effect
+  // History recording
   useEffect(() => {
     if (!isLoading && !isUndoingRedoing) {
       const current = getCurrentState();
@@ -200,9 +200,7 @@ export const ThemeProvider = ({ children, siteSettings: initialSiteSettings, max
 
   useEffect(() => {
     if (linkFontFamilies) {
-      // Sync pageStructure
       setPageStructure(prev => prev.map(el => ({ ...el, fontFamily: settings.fontFamily })));
-      // Sync element settings in settings object
       setSettings(prev => {
         const updated = { ...prev };
         pageStructure.forEach(el => {
@@ -288,7 +286,7 @@ export const ThemeProvider = ({ children, siteSettings: initialSiteSettings, max
     document.body.style.backgroundColor = settings.backgroundColor;
   }, [settings.backgroundColor, linkBackgroundColors]);
 
-  // Template management functions
+  // Template management
   const saveTemplate = async (templateName) => {
     if (!templateName.trim()) return;
     const currentState = getCurrentState();

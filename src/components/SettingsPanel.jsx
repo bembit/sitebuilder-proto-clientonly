@@ -45,7 +45,7 @@ const SettingsPanel = () => {
   // Fallback for sectionColors if undefined
   const sectionColors = settings.sectionColors || {};
 
-  // Debounce handleChange with a 100ms delay
+  // Debounce handleChange
   const debouncedHandleChange = useDebounce((property, value) => {
     handleChange(property, value);
   }, 100);

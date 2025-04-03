@@ -75,7 +75,7 @@ export const defaultTemplates = [
     name: 'Image Gallery',
     data: {
       pageStructure: [
-        // Header Section (simplified)
+        // Header Section
         { id: 'elem1741462917550', type: 'text', section: 'header' },
         { id: 'elem1741462920954', type: 'button', section: 'header' },
         // Gallery Section
@@ -93,12 +93,12 @@ export const defaultTemplates = [
       settings: {
         elem1741462917550: { content: 'Gallery', fontSize: '24px', color: '#fff', type: 'text', fontFamily: 'Poppins' },
         elem1741462920954: { content: 'Back', fontSize: '14px', color: '#000', type: 'button', backgroundColor: '#fff', fontFamily: 'Poppins' },
-        elem1741463225185: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…BAAAAAAAAAAAAAAAAAADgEP/aAAgBAwEBPwB//v8A/f8A/f/Z', type: 'image', borderColor: '#ff00fa', borderWidth: '5px', borderStyle: 'solid' },
-        elem1741463225688: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…AFBEBAAAAAAAAAAAAAAAAAAAA4P/aAAgBAwEBPwB//vSH/9k=', type: 'image', borderWidth: '10px', borderStyle: 'solid', borderColor: '#00ff05' },
-        elem1741463226050: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…WdTqdb9bdbdTrbqdTrfLMvz8eNjsYMGDBgx2cf3Dn8B//2Q==', type: 'image', borderWidth: '15px', borderColor: '#00ffdb', borderStyle: 'solid' },
-        elem1741463226429: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…/xAAUEQEAAAAAAAAAAAAAAAAAAADg/9oACAEDAQE/ACJD/9k=', type: 'image' },
-        elem1741463227310: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…tjrLhbFphGVwtjlFlxeFSPDHyROFmYsz4Yf5//wD7Mm//2Q==', type: 'image' },
-        elem1741463243345: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…EABQRAQAAAAAAAAAAAAAAAAAAAOD/2gAIAQMBAT8AMiP/2Q==', type: 'image' },
+        elem1741463225185: { src: 'https://randomuser.me/api/portraits/women/21.jpg', type: 'image', borderColor: '#ff00fa', borderWidth: '5px', borderStyle: 'solid' },
+        elem1741463225688: { src: 'https://randomuser.me/api/portraits/women/21.jpg', type: 'image', borderWidth: '10px', borderStyle: 'solid', borderColor: '#00ff05' },
+        elem1741463226050: { src: 'https://randomuser.me/api/portraits/women/21.jpg', type: 'image', borderWidth: '15px', borderColor: '#00ffdb', borderStyle: 'solid' },
+        elem1741463226429: { src: 'https://randomuser.me/api/portraits/women/21.jpg', type: 'image' },
+        elem1741463227310: { src: 'https://randomuser.me/api/portraits/women/21.jpg', type: 'image' },
+        elem1741463243345: { src: 'https://randomuser.me/api/portraits/women/21.jpg', type: 'image' },
         elem1741463232018: { content: 'Image Gallery', fontSize: '46px', color: '#fff', type: 'heading', level: 'h1', fontFamily: 'Poppins' },
         elem1741463056839: { content: '© 2025 Your Site', fontSize: '16px', color: '#fff', type: 'text', fontFamily: 'Poppins' },
       },
@@ -109,44 +109,5 @@ export const defaultTemplates = [
       },
       highlightSections: false,
     },
-  },
-  {
-    name: 'Image Gallery',
-    data: {
-      pageStructure: [
-        // Header Section (simplified)
-        { id: 'elem1741462917550', type: 'text', section: 'header' },
-        { id: 'elem1741462920954', type: 'button', section: 'header' },
-        // Gallery Section
-        { id: 'elem1741463225185', type: 'image', section: 'gallery' },
-        { id: 'elem1741463225688', type: 'image', section: 'gallery' },
-        { id: 'elem1741463226050', type: 'image', section: 'gallery' },
-        { id: 'elem1741463226429', type: 'image', section: 'gallery' },
-        { id: 'elem1741463227310', type: 'image', section: 'gallery' },
-        { id: 'elem1741463243345', type: 'image', section: 'gallery' },
-        { id: 'elem1741463232018', type: 'heading', section: 'gallery' },
-        // Footer Section
-        { id: 'elem1741463056839', type: 'text', section: 'footer' },
-      ],
-      sectionOrder: ['header', 'gallery', 'footer'],
-      settings: {
-        elem1741462917550: { content: 'Gallery', fontSize: '24px', color: '#fff', type: 'text', fontFamily: 'Poppins' },
-        elem1741462920954: { content: 'Back', fontSize: '14px', color: '#000', type: 'button', backgroundColor: '#fff', fontFamily: 'Poppins' },
-        elem1741463225185: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…BAAAAAAAAAAAAAAAAAADgEP/aAAgBAwEBPwB//v8A/f8A/f/Z', type: 'image', borderColor: '#ff00fa', borderWidth: '5px', borderStyle: 'solid' },
-        elem1741463225688: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…AFBEBAAAAAAAAAAAAAAAAAAAA4P/aAAgBAwEBPwB//vSH/9k=', type: 'image', borderWidth: '10px', borderStyle: 'solid', borderColor: '#00ff05' },
-        elem1741463226050: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…WdTqdb9bdbdTrbqdTrfLMvz8eNjsYMGDBgx2cf3Dn8B//2Q==', type: 'image', borderWidth: '15px', borderColor: '#00ffdb', borderStyle: 'solid' },
-        elem1741463226429: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…/xAAUEQEAAAAAAAAAAAAAAAAAAADg/9oACAEDAQE/ACJD/9k=', type: 'image' },
-        elem1741463227310: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…tjrLhbFphGVwtjlFlxeFSPDHyROFmYsz4Yf5//wD7Mm//2Q==', type: 'image' },
-        elem1741463243345: { src: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…EABQRAQAAAAAAAAAAAAAAAAAAAOD/2gAIAQMBAT8AMiP/2Q==', type: 'image' },
-        elem1741463232018: { content: 'Image Gallery', fontSize: '46px', color: '#fff', type: 'heading', level: 'h1', fontFamily: 'Poppins' },
-        elem1741463056839: { content: '© 2025 Your Site', fontSize: '16px', color: '#fff', type: 'text', fontFamily: 'Poppins' },
-      },
-      sectionStyles: {
-        header: { alignItems: 'center', backgroundColor: '#333' },
-        gallery: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-around', padding: '20px' },
-        footer: { textAlign: 'center', padding: '10px' },
-      },
-      highlightSections: false,
-    },
-  },
+  }
 ];

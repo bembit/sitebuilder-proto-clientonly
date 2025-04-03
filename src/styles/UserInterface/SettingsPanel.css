@@ -1,3 +1,4 @@
+/* src/styles/UserInterface/SettingsPanel.css */
 .settings-panel {
     position: fixed;
     top: var(--spacing-s);

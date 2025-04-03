@@ -7,6 +7,9 @@ import ImageBlock from './elements/ImageBlock';
 import HeadingBlock from './elements/HeadingBlock';
 import ButtonBlock from './elements/ButtonBlock';
 
+// Main Element Component
+// Handles dragging, dropping, and removing elements
+// Renders from /src/components/elements/whatever.jsx
 const Element = ({ id, type, index, moveElement, style }) => {
   const { settings, setSelectedElement, selectedElement, setPageStructure, setSettings } = useContext(ThemeContext);
   const elementSettings = settings[id] || {};
